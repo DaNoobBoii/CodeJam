@@ -1,0 +1,127 @@
+/* contact */
+.contact {
+  color: #FFF;
+  height: 150vh;
+  background: url(../img/header-page-2-bg.png);
+}
+
+.contact .title {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.contact .content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact .content .text {
+  background: var(--darkStateBlue);
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .content .text,
+.contact .content .form {
+  margin: 0 10px;
+  height: 500px;
+  box-shadow: 6px 6px 0 rgb(0, 0, 0, .4);
+}
+
+.contact .content .form {
+  background: white;
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .content .form .inputs {
+  height: 100%;
+  width: 100%;
+  background: var(--spaceCadet);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 50px;
+}
+
+.contact .content .form .inputs .name,
+.contact .content .form .inputs .email,
+.contact .content .form .inputs .massage {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.contact .content .form .inputs .name input,
+.contact .content .form .inputs .email input,
+.contact .content .form .inputs .massage input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #FFF;
+  outline: none;
+  width: 100%;
+}
+
+.contact .content .form .inputs .button {
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.contact .content .form .inputs .button button {
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+}
+
+.contact .content .form .inputs .button button {
+  background: var(--darkStateBlue);
+  color: #FFF;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px black;
+}
+
+.contact .content .form .inputs .button button:active {
+  box-shadow: 2px 2px 5px black inset;
+}
+
+.contact .content .form .inputs .name input,
+.contact .content .form .inputs .email input,
+.contact .content .form .inputs .button button,
+.contact .content .form .inputs .massage input {
+  resize: none;
+  height: 50px;
+  white-space: pre-wrap;
+}
+
+.contact .content .form .inputs .name input[type="text"],
+.contact .content .form .inputs .email input[type="email"],
+.contact .content .form .inputs .massage input[type="text"] {
+  padding: 10px;
+  color: #FFF;
+}
+
+@media screen and (max-width: 830px) {
+  .contact .content {
+    flex-direction: column;
+  }
+
+  .contact .content .text,
+  .contact .content .form {
+    width: 80%;
+    transform: scale(1);
+  }
+}
+
+/* contact */

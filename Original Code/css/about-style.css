@@ -1,0 +1,33 @@
+/* about */
+.about {
+  margin-top: -82px;
+  padding-top: 82px;
+  background: url(../img/header-page-2-bg.png);
+  color: #FFF;
+}
+
+.about .title {
+  position: relative;
+  display: inline-block;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+.about .title::before {
+  content: '';
+  width: 30%;
+  height: 3px;
+  display: block;
+  position: absolute;
+  background: var(--indianRed);
+  bottom: 0;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 848px) {
+  .about {
+    margin-top: 0;
+  }
+}
+
+/* about */

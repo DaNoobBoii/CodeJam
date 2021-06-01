@@ -1,0 +1,484 @@
+body {
+  background: var(--spaceCadet);
+}
+
+/* Navbar */
+.navbar .navbar-nav .nav-item {
+  color: white;
+  transition: .4s;
+  margin: auto 12px;
+}
+
+.navbar .navbar-nav .nav-item.active {
+  font-weight: bolder;
+}
+
+/* Navbar */
+
+/* Content */
+.content {
+  padding: 15vh 5vw 5vh;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-card {
+  background: var(--indianRed);
+  width: 30%;
+  height: 100%;
+  color: #FFF;
+  padding: 30px;
+  margin: 0 15px;
+  box-shadow: 6px 6px 0 rgb(0, 0, 0, .4);
+}
+
+.admin-card .img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.admin-card .img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.admin-card .img .img-desc {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.admin-card .text {
+  padding: 30px 0;
+}
+
+.admin-card .profile {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.status {
+  background: var(--mistyRose);
+  position: relative;
+  width: 70%;
+  height: 100%;
+  margin: 0 15px;
+  box-shadow: 6px 6px 0 rgb(0, 0, 0, .4);
+}
+
+/* Change Profile */
+.status #change-profile {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.status #change-profile .img-change {
+  width: 100%;
+  overflow: hidden;
+  margin: 16px;
+  display: flex;
+}
+
+.status #change-profile .img-change img {
+  left: 0;
+  height: 80px;
+  width: 80px;
+  margin: 0 20px 0 0;
+  border-radius: 50%;
+}
+
+.status #change-profile .img-change .text {
+  text-align: left;
+}
+
+.status #change-profile .img-change .text p,
+.status #change-profile .img-change .text input {
+  margin: 3px 0;
+}
+
+.status #change-profile .forms input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid var(--spaceCadet);
+  background: none;
+  outline: none;
+  margin: 8px 0;
+}
+
+.status #change-profile .forms input[type="text"],
+.status #change-profile .forms input[type="password"],
+.status #change-profile .forms input[type="email"] {
+  padding: 0 10px;
+  color: #000;
+}
+
+.status #change-profile .forms button {
+  width: 280px;
+  height: 40px;
+  margin: 10px 0 0 0;
+  border-radius: 25px;
+  background: #008000;
+  color: #FFF;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #BDBDBD;
+  outline: none;
+  transition: .4s;
+}
+
+.status #change-profile .forms button:hover {
+  color: #000;
+  background: #FFF;
+}
+
+/* Change Profile */
+
+/* Discount */
+/* Discount Table */
+#available-discount {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  overflow-y: scroll;
+  background: var(--mistyRose);
+}
+
+#available-discount li {
+  background: #FFF;
+  box-shadow: 3px 3px 0 rgb(0, 0, 0, .2);
+  margin: 0 auto 30px;
+  border-radius: 16px;
+  width: 95%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+#available-discount li .date {
+  display: flex;
+}
+
+#available-discount li .date p {
+  margin: 0 5px;
+}
+
+#available-discount li .dropdown .delete {
+  color: #F00;
+}
+
+#available-discount li .dropdown .delete:active {
+  color: #FFF;
+  background: #F00;
+}
+
+#available-discount li .left {
+  display: flex;
+  align-items: center;
+}
+
+#available-discount li .left .date,
+#available-discount li .left .dropdown {
+  margin: 0 5px;
+}
+
+/* Discount Table */
+
+/* Add Discount */
+.status #add-discount {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+  background: var(--mistyRose);
+}
+
+.status #add-discount .forms input,
+.status #add-discount .forms textarea {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid var(--spaceCadet);
+  background: none;
+  outline: none;
+  margin: 8px 0;
+}
+
+.status #add-discount .forms textarea {
+  resize: none;
+  height: 80px;
+}
+
+.status #add-discount .forms input[type="text"],
+.status #add-discount .forms textarea {
+  padding: 0 10px;
+  color: #000;
+}
+
+.status #add-discount .forms button {
+  width: 280px;
+  height: 40px;
+  margin: 10px 0 0 0;
+  border-radius: 25px;
+  background: #008000;
+  color: #FFF;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #BDBDBD;
+  outline: none;
+  transition: .4s;
+}
+
+.status #add-discount .forms button:hover {
+  color: #000;
+  background: #FFF;
+}
+
+.status #add-discount .forms .form-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.status #add-discount .forms .form-1,
+.status #add-discount .forms .form-2 {
+  width: 50%;
+  margin: 0 10px;
+}
+
+/* Add Discount */
+/* Discount */
+
+/* Product */
+
+/* Add Product */
+.status #add-product {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+  background: var(--mistyRose);
+}
+
+.status #add-product .img-change {
+  width: 100%;
+  overflow: hidden;
+  margin: 16px;
+  display: flex;
+}
+
+.status #add-product .img-change img {
+  left: 0;
+  height: 100px;
+  width: 160px;
+  object-fit: cover;
+  margin: 0 20px 0 0;
+}
+
+.status #add-product .img-change .text {
+  text-align: left;
+}
+
+.status #add-product .img-change .text p,
+.status #add-product .img-change .text input {
+  margin: 3px 0;
+}
+
+.status #add-product .forms input,
+.status #add-product .forms textarea {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid var(--spaceCadet);
+  background: none;
+  outline: none;
+  margin: 8px 0;
+}
+
+.status #add-product .forms textarea {
+  resize: none;
+  height: 80px;
+}
+
+.status #add-product .forms input[type="text"],
+.status #add-product .forms textarea {
+  padding: 0 10px;
+  color: #000;
+}
+
+.status #add-product .forms button {
+  width: 280px;
+  height: 40px;
+  margin: 10px 0 0 0;
+  border-radius: 25px;
+  background: #008000;
+  color: #FFF;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #BDBDBD;
+  outline: none;
+  transition: .4s;
+}
+
+.status #add-product .forms button:hover {
+  color: #000;
+  background: #FFF;
+}
+
+.status #add-product .forms .form-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.status #add-product .forms .form-1,
+.status #add-product .forms .form-2 {
+  width: 50%;
+  margin: 0 10px;
+}
+
+/* Add Product */
+/* Product Table */
+#available-product {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  overflow-y: scroll;
+  background: var(--mistyRose);
+}
+
+#available-product .img-section {
+  display: flex;
+  align-items: center;
+}
+
+#available-product .img {
+  width: 90px;
+  height: 90px;
+}
+
+#available-product .img img {
+  width: 100%;
+  height: 100%;
+}
+
+#available-product .img,
+#available-product .img-title {
+  margin: 0 10px;
+}
+
+#available-product li {
+  background: #FFF;
+  box-shadow: 3px 3px 0 rgb(0, 0, 0, .2);
+  margin: 0 auto 30px;
+  border-radius: 16px;
+  width: 95%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+#available-product li .utilities {
+  display: flex;
+}
+
+#available-product li .utilities .price,
+#available-product li .utilities .stock {
+  margin: 0 10px;
+}
+
+#available-product li .utilities p {
+  margin: 0 5px;
+}
+
+#available-product li .dropdown .delete {
+  color: #F00;
+}
+
+#available-product li .dropdown .delete:active {
+  color: #FFF;
+  background: #F00;
+}
+
+#available-product li .left,
+#available-product li .right {
+  display: flex;
+  align-items: center;
+}
+
+#available-product li .left .utilities,
+#available-product li .left .dropdown {
+  margin: 0 5px;
+}
+
+/* Product Table */
+/* Product */
+
+/* Content */
+
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    height: 200vh;
+  }
+
+  .content .admin-card {
+    width: 90%;
+    height: 50%;
+    margin: 10px 0;
+  }
+
+  .content .status {
+    width: 90%;
+    height: 100%;
+    margin: 10px 0;
+  }
+
+  .status #add-product .forms .form-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .status #add-product .forms .form-1,
+  .status #add-product .forms .form-2 {
+    width: 90%;
+  }
+
+  #available-product li {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  #available-product li .left,
+  #available-product li .right {
+    width: 100%;
+  }
+}
+
+/* responsive */

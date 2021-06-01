@@ -1,0 +1,102 @@
+form {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  background: url(../img/login-sign-in-banner.png);
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  font-family: var(--montserrat);
+}
+
+form .content {
+  height: 580px;
+  width: 400px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+form .content .title {
+  color: var(--indianRed);
+  text-align: center;
+}
+
+form .content .form {
+  background: var(--spaceCadet);
+  height: 80%;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+form .content .form .button {
+  width: 100%;
+  margin-top: auto;
+}
+
+form .content .form .button button {
+  cursor: pointer;
+}
+
+form .content .form input,
+form .content .form .button button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-family: var(--montserrat);
+  font-weight: bolder;
+}
+
+form .content .form input {
+  background: none;
+  border-bottom: 2px solid var(--indianRed);
+  margin-top: 15px;
+}
+
+form .content .form input[type="text"],
+form .content .form input[type="email"],
+form .content .form input[type="password"] {
+  color: var(--indianRed);
+  font-size: 12pt;
+}
+
+form .content .form input::placeholder {
+  color: var(--indianRed);
+  font-weight: bolder;
+  font-size: 12pt;
+  letter-spacing: .4px;
+  opacity: .5;
+}
+
+form .content .form .message {
+  color: #F00;
+  padding: 8px 0 0 0;
+  font-family: var(--montserrat);
+  font-weight: bolder;
+  font-size: 8pt;
+  left: 0;
+}
+
+#password.error,
+#confirm-password.error {
+  border-bottom: 2px solid #F00;
+  color: #F00;
+}
+
+form .content .links {
+  font-size: 9pt;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+}
