@@ -31,6 +31,14 @@ body {
   border-radius: 5px;
 }
 
+.product-card .content .carousel-section .carousel {
+  height: 100%;
+}
+
+.product-card .content .carousel-section .carousel .carousel-item {
+  height: 100%;
+}
+
 .product-card .content .text-section {
   width: 60%;
   height: 100%;
